@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTask</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="heading"><h1>SmartTasks</h1>
+    
+        <h2 id="h2">Mode</h2>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleMode()">
+            <span class="slider"></span>
+        </label>
+
+
+    </div>
+    <div class="add">
+        <input type="text" placeholder="Add a new task" class="task-input">
+
+        <select class="category">
+            <option value="" disabled selected>Category</option>
+            <option value="Work">Work</option>
+            <option value="Education">Education</option>
+            <option value="Personal">Personal</option>
+        </select>
+        <input type="date" placeholder="Due Date"  class="date-input">
+
+
+        <button id="add">ADD</button>
+        <input type="text" placeholder="Search Task" class="search-input">
+    </div>
+
+    <div class="task-section">
+        <h2>Task List</h2>
+        <ul class="tasklist">
+
+        </ul>
+   </div>
+
+  <div class="quote">
+    <p id="quoteText"></p>
+  </div>
+
+  <script src="java.js"></script> 
+</body>
+</html>
